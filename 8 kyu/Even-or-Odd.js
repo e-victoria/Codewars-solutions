@@ -16,4 +16,3 @@ function positiveSum(arr) {
 	console.log(sum);
 }
 
-console.log(positiveSum(-5, 25, 16, -1, 2));
