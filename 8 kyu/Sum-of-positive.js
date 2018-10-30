@@ -4,16 +4,19 @@ Note: if there is nothing to sum, the sum is default to 0. */
 
 
 function positiveSum(arr) {
-	var sum;
-  for(var i = 0; i < arr.length; i++) {
+
+	var sum = 0;
+
+	for (var i = 0; i < arr.length; i++) {
+
 		if(arr[i] > 0) {
-			sum = arr.reduce((a, b) => {return a + b}, 0);
+			sum += arr[i];
 		} else {
 			arr[i] = 0;
 		}
-	}
-	return sum;
-	console.log(sum);
-}
 
-console.log(positiveSum(-5, 25, 16, -1, 2));
+	}
+
+	return sum;
+
+}
